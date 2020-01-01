@@ -11,7 +11,7 @@ export class NgbdModalBasic {
     constructor(private modalService: NgbModal) {}
 
     open(content, type) {
-        if (type === 'sm') {
+        if (type == 'sm') {
             console.log('aici');
             this.modalService.open(content, { size: 'sm' }).result.then((result) => {
                 this.closeResult = `Closed with: ${result}`;
